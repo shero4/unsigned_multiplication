@@ -1,9 +1,11 @@
 def main():
     multiplicand = input("Enter the multiplicand(Decimal): ")
-    multiplier = input("Enter the multiplier(Decimal): ")
-    no_of_bits = int(input("Enter the number of bits: "))
     m = "{0:b}".format(int(multiplicand))
+    print("Number of bits: " + str(len(m)))
+    multiplier = input("Enter the multiplier(Decimal): ")
     q = "{0:b}".format(int(multiplier))
+    print("Number of bits: " + str(len(q)))
+    no_of_bits = int(input("Enter the number of bits: "))
     q = q.zfill(no_of_bits)
     m = m.zfill(no_of_bits)
     n = len(m)
